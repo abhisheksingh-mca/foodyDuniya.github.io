@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Rampart+One&display=swap');
+*{
+    margin : 0;
+    padding: 0;
+}
+body{
+    font-family: 'Kanit', sans-serif;
+    background-color: #efefef;
+    box-sizing: border-box;
+    margin: 30px;
+}
+.container{
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    margin-left: 2%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+}
+.left-side{
+    margin-left: 40px;
+    padding: 20px;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* background: white; */
+    
+}
+.logo{
+    display: flex;
+    position: relative;
+    margin-top: 50px;
+    font-size: larger;
+}
+.nav{
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 500;
+    color: #000000;
+    margin-top: 30px;
+}
+.nav a{
+    margin-top: 15px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500;
+}
+.cart{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.cart button{
+    outline: none;
+    display: block;
+    border: 0;
+    font-size: 16px;
+    line-height: 1;
+    padding: 12px 35px;
+    border-radius: 30px;
+    background: #ee4a4a;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+.cart button:hover{
+    background-color: #ff5757;
+    box-shadow: 3px 3px 10px black;
+}
+.content{
+
+    display: inline-flex;
+    font-size: 30px;
+    margin-left: 200px;
+    padding-left: 20px;
+    position: relative;
+    top: 50px;
+    padding: 2px 2px;
+    flex-wrap: wrap;
+}
+.content .header{
+    font-family: 'Rampart One', cursive;
+    display: block;
+    width: 500px;
+    height: auto;
+}
+.content .info{
+    position: relative;
+    width: 300px;
+    height: 100px;
+    margin-top: 30px;
+    left: 10px;
+    padding: 20px;
+}
+.info p{
+    display: flex;
+    font-family: 'Kanit', sans-serif;
+    left: 0;
+    font-size: 15px;
+    width: 300;
+    justify-content: center;
+    align-items: center;
+}
+hr{
+    height:3px; width:30%; margin-top: 8px; border-width:0; color:red; background-color:red;
+}
+.content .social-media{
+    display: flex;
+    /* grid-template-columns: repeat(4,1fr); */
+    grid-gap: 40px;;
+    margin: 20px;
+    padding: 10px;
+    align-items: center;
+    height: 250px;
+    width: auto;
+    flex-wrap: wrap;
+}
+.content .social-media .items{
+    box-shadow: 3px 3px 6px 0px rgba(0,0,0,0.3);
+    align-items: center;
+    border: none;
+    width: 130px;
+    height: 140px;
+    overflow: hidden;
+    justify-content: center;
+    border-radius: 20px; 
+    background: rgb(248, 247, 247);
+    transition: tranform 0.3s;
+}
+.content .social-media .items:hover{
+    transform: translateY(5px);
+    box-shadow: 3px 3px 26px 0px rgba(0,0,0,0.3);;
+}
+.content .social-media .items a{
+    margin: 3px;
+    padding: 2px;
+}
+
+.content .social-media .items a img{
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1.5ss;
+    transition-delay: 0.5s;
+}
+
+
+
